@@ -1,19 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
     <title>M.Video Downloader - Free & Fast Social Video Downloader</title>
+
+    <!-- PWA REQUIRED -->
+    <link rel="manifest" href="/metadata.json">
     <meta name="theme-color" content="#4f46e5">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/3039/3039386.png">
-    
+
+    <!-- ICON -->
+    <link rel="apple-touch-icon" href="icon-192.png">
+
+    <!-- STYLES -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -32,25 +39,25 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        /* Mobile Active State */
         .active-scale:active {
             transform: scale(0.95);
         }
-        /* Fix for scroll stutter */
         html {
             scroll-behavior: smooth;
         }
     </style>
-<script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "@google/genai": "https://esm.sh/@google/genai@^1.36.0"
-  }
-}
-</script>
+
+    <!-- IMPORT MAP -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+        "@google/genai": "https://esm.sh/@google/genai@^1.36.0"
+      }
+    }
+    </script>
 </head>
 <body>
     <div id="root"></div>
