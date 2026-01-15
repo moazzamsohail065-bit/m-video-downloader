@@ -1,5 +1,22 @@
 {
   "name": "M.Video Downloader",
-  "description": "A high-speed, multi-platform social media video downloader with intelligent link analysis and an elegant user interface.",
-  "requestFramePermissions": []
+  "short_name": "MVideo",
+  "description": "M.Video Downloader is an app to download videos from social media platforms easily.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
